@@ -27,11 +27,12 @@ class CSharpCarCompInterface extends Component {
         if(this.props.newtitle) {
             this.changeTitle();    
         }
-        // Couldnt figure out the year display
+        // Couldnt figure out the year display - memento 
     }
 
     componentWillUnmount() {
         // Something for this part!!
+        // alert("Display something - component was unmounted!")
     }
 
     render() {

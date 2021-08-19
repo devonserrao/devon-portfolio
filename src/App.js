@@ -22,7 +22,7 @@ function App() {
       <GreetingToPortfolio name="Devon Serrao" />
       <hr />
       <Router>
-        <Navbar />
+        <NavBar />
 
         <Switch>
           <Route path="/bookstore" component={returnBookstoreWebsite} />
