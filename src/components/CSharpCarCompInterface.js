@@ -30,6 +30,10 @@ class CSharpCarCompInterface extends Component {
         // Couldnt figure out the year display
     }
 
+    componentWillUnmount() {
+        // Something for this part!!
+    }
+
     render() {
         return(
             <div className="card">
