@@ -1,23 +1,16 @@
 import logo from './logo.svg';
+import AngularCarCompProject from './components/AngularCarCompProject';
 import './App.css';
 
+function GreetingToPortfolio(props) {
+  return <h1> Welcome to {props.name}'s Portfolio!</h1>
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GreetingToPortfolio name="Devon Serrao" />
+      <AngularCarCompProject />
+
     </div>
   );
 }
