@@ -12,6 +12,10 @@ import {
   useRouteMatch,
   useParams
 } from 'react-router-dom'
+import { EmailList, ListContactDetails } from './components/ListContactDetails';
+
+
+
 
 function GreetingToPortfolio(props) {
   return <h1> Welcome to {props.name}'s Portfolio!</h1>
@@ -37,6 +41,8 @@ function App() {
       <CSharpCarCompInterface newtitle="C# Windows Form Application GUI"/>
       <hr />
       <BookstoreWebsite />
+      <hr />
+      <EmailList />
     </div>
   );
 }
