@@ -15,7 +15,13 @@ function ViewBookstoreProject(props) {
                 <p className="card-text">
                     <ul>
                         <li>
-                            LOREM IPSUMSDJSNDJNDNSDDND
+                            LOREM IPSUM 1
+                        </li> 
+                        <li>
+                            LOREM IPSUM 2
+                        </li> 
+                        <li>
+                            LOREM IPSUM 3
                         </li> 
                     </ul>
                 </p>

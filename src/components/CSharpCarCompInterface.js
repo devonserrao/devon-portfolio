@@ -56,7 +56,7 @@ class CSharpCarCompInterface extends Component {
                             </li>
                         </ul>
                     </p>
-                    <a href="#" className="card-link">Another link</a>
+                    
                 </div>
             </div>
         )

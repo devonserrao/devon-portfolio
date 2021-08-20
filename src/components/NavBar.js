@@ -29,6 +29,9 @@ import './NavBar.css';
                     <li className="nav-item">
                         <Link to="/contact" className="nav-link">Contact</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to="/apicall" className="nav-link">API Call</Link>
+                    </li>
                 </ul>
             </div>
         </nav>

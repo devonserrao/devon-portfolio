@@ -13,6 +13,7 @@ import {
   useParams
 } from 'react-router-dom'
 import { EmailList, ListContactDetails } from './components/ListContactDetails';
+import FetchAPICall from './components/FetchAPICall';
 
 
 
@@ -29,6 +30,8 @@ function App() {
         <NavBar />
 
         <Switch>
+          {/* <Route path="/" component={returnFetchAPICall} /> */}
+          <Route path="/apicall" component={returnFetchAPICall} />
           <Route path="/bookstore" component={returnBookstoreWebsite} />
           <Route path="/angular" component={returnAngularProject} />
           <Route path="/csharp" component={returnCSharpProject} />
@@ -36,13 +39,15 @@ function App() {
         </Switch>
       </Router>
 
-      <AngularCarCompProject />
+      {/* <AngularCarCompProject />
       <hr />
       <CSharpCarCompInterface newtitle="C# Windows Form Application GUI"/>
       <hr />
       <BookstoreWebsite />
       <hr />
-      <EmailList />
+      <EmailList /> */}
+
+      {/* <FetchAPICall /> */}
     </div>
   );
 }
@@ -66,7 +71,7 @@ function returnAngularProject () {
 function returnCSharpProject () {
   return (
     <div>
-      <CSharpCarCompInterface />
+      <CSharpCarCompInterface newtitle="C# Windows Form Application GUI" />
     </div>
   )
 }
@@ -78,4 +83,13 @@ function returnEmailList() {
     </div>
   )
 }
+
+function returnFetchAPICall() {
+  return(
+    <div>
+      <FetchAPICall />
+    </div>
+  )
+}
+
 export default App;
