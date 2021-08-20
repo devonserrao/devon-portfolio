@@ -3,18 +3,26 @@ import React from 'react';
 function ListContactDetails(props) {
 
     const itemList = props.items.map( (item) => 
-        <li key={item.id.toString()}>
+        <li className="list-group-item" key={item.id.toString()}>
             {item.value}
         </li>
     );
 
     return (
-        <div>
-            <h2>{props.title}</h2>
-            <ul>
+        <div className="card">
+            <div className="card-header">
+                Emails:
+            </div>
+            <ul className="list-group list-group-flush">
                 {itemList}
             </ul>
         </div>
+        // <div>
+        //     <h2>{props.title}</h2>
+        //     <ul>
+        //         {itemList}
+        //     </ul>
+        // </div>
     )
 }
 
