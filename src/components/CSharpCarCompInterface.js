@@ -6,7 +6,7 @@ class CSharpCarCompInterface extends Component {
         super();
         this.state = {
             title: "Car Company Database Interface",
-            date: new Date(2018, 4)
+            date: new Date(2018, 3)
         };
     }
 
@@ -31,16 +31,18 @@ class CSharpCarCompInterface extends Component {
     }
 
     componentWillUnmount() {
-        // Something for this part!!
-        // alert("Display something - component was unmounted!")
+        alert("Left C Sharp project!");
     }
 
     render() {
+        let dateString = this.state.date.toLocaleDateString().replace("/1", "");
+        console.log(dateString);
+
         return(
             <div className="card">
                 <div className="card-body">
                     <h5 className="card-title">{this.state.title}</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">April 2018</h6>
+                    <h6 className="card-subtitle mb-2 text-muted">{this.state.date.toLocaleDateString()}</h6>
                     <p className="card-text">
                         <ul>
                             <li>
