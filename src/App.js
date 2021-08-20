@@ -32,7 +32,7 @@ function App() {
           <Route path="/bookstore" component={returnBookstoreWebsite} />
           <Route path="/angular" component={returnAngularProject} />
           <Route path="/csharp" component={returnCSharpProject} />
-          {/* Add contact details here */}
+          <Route path="/contact" component={returnEmailList} />
         </Switch>
       </Router>
 
@@ -67,6 +67,14 @@ function returnCSharpProject () {
   return (
     <div>
       <CSharpCarCompInterface />
+    </div>
+  )
+}
+
+function returnEmailList() {
+  return (
+    <div>
+      <EmailList />
     </div>
   )
 }

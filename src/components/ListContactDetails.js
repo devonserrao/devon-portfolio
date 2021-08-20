@@ -23,7 +23,7 @@ function EmailList(props) {
     const emails = [
         {
             id: 1,
-            value: "devonserrao101@gmail.com"
+            value: "placeholder@gmail.com"
         },
         {
             id: 2,
